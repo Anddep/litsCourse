@@ -48,10 +48,25 @@
   <dialog id="modal">
     <span id="close" class="close">&times;</span>
   <p>Fill info</p>
-  <form>
+  <form method="dialog">
+      <p>
+        <label for="favAnimal">Favorite animal:</label>
+      <select>
+        <option id="favAnimal"></option>
+        <option>Brine shrimp</option>
+        <option>Red panda</option>
+        <option>Spider monkey</option>
+      </select>
 
-
-  <button type="submit">submit</button>
+    </p>
+      <p>
+      <label for="animalName">Animal name:</label>
+      <input type="text" id="animalName" name="animalName" placeholder="Enter name"/>
+      </p>
+    <menu>
+      <button id="cancel" type="reset">Cancel</button>
+      <button type="submit">Confirm</button>
+    </menu>
   </form>
   </dialog>
 
